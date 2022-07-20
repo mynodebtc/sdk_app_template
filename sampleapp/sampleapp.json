@@ -1,0 +1,50 @@
+{
+    "name": "Sample Application",
+    "short_name": "sampleapp",
+    "author": {"name": "sampleapp author", "link":""},
+    "website": {"name": "GitHub", "link": "https://github.com/githubuser/sampleapp"},
+    "category": "lightning_app",
+    "short_description": "Fill in short description",
+    "description": [
+        "Fill in longer description"
+    ],
+    "latest_version": "v0.0.1",
+    "linux_user": "sampleapp",
+    "targz_download_url": "https://github.com/githubuser/sampleapp/archive/refs/tags/{VERSION}.tar.gz",
+    "install_env_vars": {},
+    "supports_app_page": true,
+    "supports_testnet": false,
+    "http_port": "8000",
+    "https_port": "8001",
+    "requires_bitcoin":true,
+    "requires_docker_image_installation":false,
+    "requires_electrs":false,
+    "requires_lightning":true,
+    "show_on_application_page": true,
+    "show_on_homepage": true,
+    "show_on_status_page": true,
+    "hide_status_icon": false,
+    "app_tile_name": "Sample Application",
+    "app_tile_running_status_text": "Running",
+    "app_tile_button_text": "Info",
+    "app_tile_button_href": "/app/sampleapp/info",
+    "app_page_show_open_button": true,
+    "app_page_content": [
+        {"heading": "Instructions",
+         "content": [
+            "Add general usage instructions here. You can open the app with the Open button on the left (if web based).",
+            "Paragraph 2",
+            "Paragraph 3",
+            "Paragraph 4",
+            "Enjoy!"
+        ]}
+    ],
+    "can_uninstall": true,
+    "can_reinstall":true,
+    "can_enable_disable": true,
+    "is_beta": false,
+    "is_premium": false,
+    "homepage_order": 91,
+    "app_type": "custom",
+    "sdk_version": 1
+}
