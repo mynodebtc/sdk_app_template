@@ -2,7 +2,7 @@
     "name": "Sample Application",
     "short_name": "sampleapp",
     "author": {"name": "sampleapp author", "link":""},
-    "website": {"name": "GitHub", "link": "https://github.com/githubuser/sampleapp"},
+    "website": {"name": "GitHub", "link": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT"},
     "category": "lightning_app",
     "short_description": "Fill in short description",
     "description": [
@@ -10,7 +10,7 @@
     ],
     "latest_version": "v0.0.1",
     "linux_user": "sampleapp",
-    "targz_download_url": "https://github.com/githubuser/sampleapp/archive/refs/tags/{VERSION}.tar.gz",
+    "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
     "install_env_vars": {},
     "supports_app_page": true,
     "supports_testnet": false,
@@ -33,7 +33,7 @@
         {"heading": "Instructions",
          "content": [
             "Add general usage instructions here. You can open the app with the Open button on the left (if web based).",
-            "Paragraph 2",
+            "For more custom content, update the template and python files under the 'www' folder.",
             "Paragraph 3",
             "Paragraph 4",
             "Enjoy!"
