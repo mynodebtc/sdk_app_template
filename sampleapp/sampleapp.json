@@ -9,7 +9,6 @@
         "Fill in longer description"
     ],
     "latest_version": "v0.0.1",
-    "linux_user": "sampleapp",
     "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
     "install_env_vars": {},
     "supports_app_page": true,
