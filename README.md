@@ -47,14 +47,13 @@ This file is optional and will be present if your app has a web interface and ca
 
 All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within myNode. Below is a table of the available settings and a description.
 
-| Setting               | Default           | Description                                                                       |
-| --------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| Setting               | Type / Default    | Description                                                               |
+| --------------------- | ----------------- | ------------------------------------------------------------------------- |
 | name                  | Sample App        | This is the display name of the application. Shown on the Marketplace and Manage Apps pages. |
-
-| short_name            | sampleapp         | Text |
-| author                | Sample Data       | Text |
-| website               | Sample Data       | Text |
-| category              | lightning_app     | Text |
+| short_name            | sampleapp         | This is the "name id" of the app. It identifies the app, its files and its folders. |
+| author                | Dictionary        | This controls the "Author" item on the app's Marketplace page. It must contain a "name" and an optional "link" field. |
+| website               | Sample Data       | This controls the "Website" item on the app's Marketplace page. It must contain a "name" and an optional "link" field. |
+| category              | lightning_app     | This controls the section the app appears within the Marketplace. Options are bitcoin_app, lightning_app, networking, and device_management. |
 | short_description     | sampleapp         | Text |
 | description           | sampleapp         | Text |
 | targz_download_url    | sampleapp         | Text |
@@ -77,14 +76,14 @@ All application data is managed via a JSON file stored in the main application f
 | app_tile_button_href  | "/app/sampleapp/info" | Text |
 | app_page_show_open_button | true          | Text |
 | app_page_content      | Sample Data       | Text |
-| can_uninstall         | true              | Text |
-| can_reinstall         | true              | Text |
-| can_enable_disable    | true              | Text |
-| is_beta               | false             | Text |
-| is_premium            | false             | Text |
-| homepage_order        | 91                | Text |
-| app_type              | custom            | Text |
-| sdk_version           | 1                 | Text |
+| can_uninstall         | true              | Indicated if the application can be uninstalled. |
+| can_reinstall         | true              | Indicates if the application can be re-installed. |
+| can_enable_disable    | true              | Indicates if the application is a service that can be enabled and disabled. |
+| is_beta               | false             | Indicates if an app is "beta" quality. If true, adds a beta icon in the UI. |
+| is_premium            | false             | Indicates if this app is available only for premium users. |
+| homepage_order        | 91                | This dictates the order of apps shown on the home page. Should be 91+. |
+| app_type              | custom            | This indicated the type of application. For future use. |
+| sdk_version           | 1                 | This indicated the SDK version that this app supports. Primarily for future use. |
 
 <br/>
 **Sample Application Data JSON**
