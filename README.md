@@ -38,11 +38,105 @@ This script must be present, but content it optional. This script will run after
 This is the python file for handling web interface requests. The web interface is handled by flask and the file comes with a single hander for "/app/sampleapp/info". Additional URLs can be registered for more complex applications if they need to offer additional functionality.
 
 ### www/templates/
-This is the folder for HTML / JINJA templates to be used by your application. A sample template (sampleapp.html) is provided, but may not be required. Applications can use the standard app template which can be customized via the JSON file, but more advanced apps may require their own templates.
+This is the folder for HTML / Jinja templates to be used by your application. A sample template (sampleapp.html) is provided, but may not be required. Applications can use the standard app template which can be customized via the JSON file, but more advanced apps may require their own templates.
 
 ### nginx/https_sampleapp.conf
 This file is optional and will be present if your app has a web interface and can be accessed via HTTPS. It may need to be updated depending on your application requirements.
 
 ## Application Data
 
-TODO
+All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within myNode. Below is a table of the available settings and a description.
+
+| Setting               | Default        | Description                                                                          |
+| --------------------- | -------------- | ------------------------------------------------------------------------------------ |
+| name                  | Sample App     |                                                                                      |
+| short_name            | sampleapp      | Text                                                                                 |
+| author                | Sample Data    | Text                                                                                 |
+| website               | Sample Data    | Text                                                                                 |
+| category              | lightning_app  | Text                                                                                 |
+| short_description     | sampleapp      | Text                                                                          |
+| description           | sampleapp      | Text        |
+| targz_download_url    | sampleapp      | Text        |
+| install_env_vars      | sampleapp      | Text        |
+| supports_app_page | sampledata | Text |
+| supports_testnet | sampledata | Text |
+| http_port | sampledata | Text |
+| https_port | sampledata | Text |
+| requires_bitcoin | sampledata | Text |
+| requires_docker_image_installation | sampledata | Text |
+| requires_electrs | sampledata | Text |
+| requires_lightning | sampledata | Text |
+| show_on_application_page | sampledata | Text |
+| show_on_homepage | sampledata | Text |
+| show_on_status_page | sampledata | Text |
+| hide_status_icon | sampledata | Text |
+| app_tile_name | sampledata | Text |
+| app_tile_running_status_text | sampledata | Text |
+| app_tile_button_text | sampledata | Text |
+| app_tile_button_href | sampledata | Text |
+| app_page_show_open_button | sampledata | Text |
+| app_page_content | sampledata | Text |
+| can_uninstall | sampledata | Text |
+| can_reinstall | sampledata | Text |
+| can_enable_disable | sampledata | Text |
+| is_beta | sampledata | Text |
+| is_premium | sampledata | Text |
+| homepage_order | 91 | Text |
+| app_type | custom | Text |
+| sdk_version | 1 | Text |
+
+** Sample Application Data JSON **
+<details>
+  <summary>Expand</summary>
+```json
+{
+    "name": "Sample Application",
+    "short_name": "sampleapp",
+    "author": {"name": "sampleapp author", "link":""},
+    "website": {"name": "GitHub", "link": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT"},
+    "category": "lightning_app",
+    "short_description": "Fill in short description",
+    "description": [
+        "Fill in longer description"
+        ],
+    "latest_version": "v0.0.1",
+    "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
+    "install_env_vars": {},
+    "supports_app_page": true,
+    "supports_testnet": false,
+    "http_port": "8000",
+    "https_port": "8001",
+    "requires_bitcoin":true,
+    "requires_docker_image_installation":false,
+    "requires_electrs":false,
+    "requires_lightning":true,
+    "show_on_application_page": true,
+    "show_on_homepage": true,
+    "show_on_status_page": true,
+    "hide_status_icon": false,
+    "app_tile_name": "Sample Application",
+    "app_tile_running_status_text": "Running",
+    "app_tile_button_text": "Info",
+    "app_tile_button_href": "/app/sampleapp/info",
+    "app_page_show_open_button": true,
+    "app_page_content": [
+        {"heading": "Instructions",
+            "content": [
+            "Add general usage instructions here. You can open the app with the Open button on the left (if web based).",
+            "For more custom content, update the template and python files under the 'www' folder.",
+            "Paragraph 3",
+            "Paragraph 4",
+            "Enjoy!"
+            ]}
+        ],
+    "can_uninstall": true,
+    "can_reinstall":true,
+    "can_enable_disable": true,
+    "is_beta": false,
+    "is_premium": false,
+    "homepage_order": 91,
+    "app_type": "custom",
+    "sdk_version": 1
+}
+```
+</details>
