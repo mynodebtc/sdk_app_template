@@ -85,7 +85,7 @@ All application data is managed via a JSON file stored in the main application f
 | app_type              | custom            | This indicated the type of application. For future use. |
 | sdk_version           | 1                 | This indicated the SDK version that this app supports. Primarily for future use. |
 
-<br/><br/>
+<br/>
 
 **Sample Application Data JSON**
 <details>
