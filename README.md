@@ -47,48 +47,50 @@ This file is optional and will be present if your app has a web interface and ca
 
 All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within myNode. Below is a table of the available settings and a description.
 
-| Setting               | Default        | Description                                                                          |
-| --------------------- | -------------- | ------------------------------------------------------------------------------------ |
-| name                  | Sample App     |                                                                                      |
-| short_name            | sampleapp      | Text                                                                                 |
-| author                | Sample Data    | Text                                                                                 |
-| website               | Sample Data    | Text                                                                                 |
-| category              | lightning_app  | Text                                                                                 |
-| short_description     | sampleapp      | Text                                                                          |
-| description           | sampleapp      | Text        |
-| targz_download_url    | sampleapp      | Text        |
-| install_env_vars      | sampleapp      | Text        |
-| supports_app_page | sampledata | Text |
-| supports_testnet | sampledata | Text |
-| http_port | sampledata | Text |
-| https_port | sampledata | Text |
-| requires_bitcoin | sampledata | Text |
-| requires_docker_image_installation | sampledata | Text |
-| requires_electrs | sampledata | Text |
-| requires_lightning | sampledata | Text |
-| show_on_application_page | sampledata | Text |
-| show_on_homepage | sampledata | Text |
-| show_on_status_page | sampledata | Text |
-| hide_status_icon | sampledata | Text |
-| app_tile_name | sampledata | Text |
-| app_tile_running_status_text | sampledata | Text |
-| app_tile_button_text | sampledata | Text |
-| app_tile_button_href | sampledata | Text |
-| app_page_show_open_button | sampledata | Text |
-| app_page_content | sampledata | Text |
-| can_uninstall | sampledata | Text |
-| can_reinstall | sampledata | Text |
-| can_enable_disable | sampledata | Text |
-| is_beta | sampledata | Text |
-| is_premium | sampledata | Text |
-| homepage_order | 91 | Text |
-| app_type | custom | Text |
-| sdk_version | 1 | Text |
+| Setting               | Default           | Description                                                                       |
+| --------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| name                  | Sample App        |                                                                                   |
+| short_name            | sampleapp         | Text                                                                              |
+| author                | Sample Data       | Text                                                                              |
+| website               | Sample Data       | Text                                                                              |
+| category              | lightning_app     | Text                                                                              |
+| short_description     | sampleapp         | Text                                                                              |
+| description           | sampleapp         | Text |
+| targz_download_url    | sampleapp         | Text |
+| install_env_vars      | sampleapp         | Text |
+| supports_app_page     | true              | Text |
+| supports_testnet      | false             | Text |
+| http_port             | 8000              | Text |
+| https_port            | 8001              | Text |
+| requires_bitcoin      | true              | Text |
+| requires_docker_image_installation | false | Text |
+| requires_electrs      | false             | Text |
+| requires_lightning    | true              | Text |
+| show_on_application_page                  | true | Text |
+| show_on_homepage      | true              | Text |
+| show_on_status_page   | true              | Text |
+| hide_status_icon      | false             | Text |
+| app_tile_name         | "Sample Application" | Text |
+| app_tile_running_status_text | "Running"  | Text |
+| app_tile_button_text  | "Info"            | Text |
+| app_tile_button_href  | "/app/sampleapp/info" | Text |
+| app_page_show_open_button | true          | Text |
+| app_page_content      | Sample Data       | Text |
+| can_uninstall         | true              | Text |
+| can_reinstall         | true              | Text |
+| can_enable_disable    | true              | Text |
+| is_beta               | false             | Text |
+| is_premium            | false             | Text |
+| homepage_order        | 91                | Text |
+| app_type              | custom            | Text |
+| sdk_version           | 1                 | Text |
+
+
 
 **Sample Application Data JSON**
 <details>
   <summary>Expand</summary>
-  
+
 ```json
 {
     "name": "Sample Application",
