@@ -49,12 +49,13 @@ All application data is managed via a JSON file stored in the main application f
 
 | Setting               | Default           | Description                                                                       |
 | --------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| name                  | Sample App        |                                                                                   |
-| short_name            | sampleapp         | Text                                                                              |
-| author                | Sample Data       | Text                                                                              |
-| website               | Sample Data       | Text                                                                              |
-| category              | lightning_app     | Text                                                                              |
-| short_description     | sampleapp         | Text                                                                              |
+| name                  | Sample App        | This is the display name of the application. Shown on the Marketplace and Manage Apps pages. |
+
+| short_name            | sampleapp         | Text |
+| author                | Sample Data       | Text |
+| website               | Sample Data       | Text |
+| category              | lightning_app     | Text |
+| short_description     | sampleapp         | Text |
 | description           | sampleapp         | Text |
 | targz_download_url    | sampleapp         | Text |
 | install_env_vars      | sampleapp         | Text |
@@ -85,8 +86,7 @@ All application data is managed via a JSON file stored in the main application f
 | app_type              | custom            | Text |
 | sdk_version           | 1                 | Text |
 
-
-
+<br/>
 **Sample Application Data JSON**
 <details>
   <summary>Expand</summary>
