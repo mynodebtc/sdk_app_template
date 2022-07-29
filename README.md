@@ -47,6 +47,12 @@ This file is optional and will be present if your app has a web interface and ca
 
 All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within myNode. Below is a table of the available settings and a description.
 
+<style scoped>
+table {
+  font-size: 12px;
+}
+</style>
+
 | Setting               | Type / Default    | Description                                                               |
 | --------------------- | ----------------- | ------------------------------------------------------------------------- |
 | name                  | Sample App        | This is the display name of the application. Shown on the Marketplace and Manage Apps pages. |
