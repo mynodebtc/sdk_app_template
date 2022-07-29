@@ -85,9 +85,10 @@ All application data is managed via a JSON file stored in the main application f
 | app_type | custom | Text |
 | sdk_version | 1 | Text |
 
-** Sample Application Data JSON **
+**Sample Application Data JSON**
 <details>
   <summary>Expand</summary>
+  
 ```json
 {
     "name": "Sample Application",
