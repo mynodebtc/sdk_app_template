@@ -10,6 +10,7 @@
     ],
     "latest_version": "v0.0.1",
     "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
+    "skip_targz_download": false,
     "install_env_vars": {},
     "supports_app_page": true,
     "supports_testnet": false,
