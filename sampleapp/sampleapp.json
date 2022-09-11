@@ -9,17 +9,23 @@
         "Fill in longer description"
     ],
     "latest_version": "v0.0.1",
-    "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
-    "skip_targz_download": false,
+    "supported_archs": null,
+    "download_skip": false,
+    "download_type": "source",
+    "download_source_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
+    "download_binary_url": {
+        "aarch64": "download_url",
+        "x86_64": "download_url"
+    },
     "install_env_vars": {},
     "supports_app_page": true,
     "supports_testnet": false,
     "http_port": "8000",
     "https_port": "8001",
-    "requires_bitcoin":true,
-    "requires_docker_image_installation":false,
-    "requires_electrs":false,
-    "requires_lightning":true,
+    "requires_bitcoin": true,
+    "requires_docker_image_installation": false,
+    "requires_electrs": false,
+    "requires_lightning": true,
     "show_on_application_page": true,
     "show_on_homepage": true,
     "show_on_status_page": true,
@@ -49,5 +55,5 @@
     "homepage_section": "apps",
     "homepage_order": 91,
     "app_type": "custom",
-    "sdk_version": 1
+    "sdk_version": 2
 }
