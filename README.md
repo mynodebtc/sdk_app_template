@@ -56,7 +56,11 @@ All application data is managed via a JSON file stored in the main application f
 | <sub>category              | <sub>lightning_app     | <sub>This defines the section the app appears within the Marketplace. Options are bitcoin_app, lightning_app, networking, and device_management. |
 | <sub>short_description     | <sub>Sample Data       | <sub>This defines the short description of the app on an app tile before it is enabled. Ideally, it should be less than 20 characters. |
 | <sub>description           | <sub>Sample Data       | <sub>This is the long description of an application that is displayed on the app's Marketplace page. It can be a single string or a list of strings to be displayed as paragraphs. |
-| <sub>targz_download_url    | <sub>Sample Data       | <sub>This is the URL to download the application and is typically a link to the GitHub tar.gz file for a tag or release. It will be extracted and installed prior to running the apps install script. |
+| <sub>supported_archs | <sub>{}           | <sub>This determines which device architectures are supported. Default is None which means all architectures are supported. Otherwise, this is a list of supported architectures, like ["aarch64","x86_64"]. |
+| <sub>download_skip    | <sub>true       | <sub>This defines whether or not a download is required to install the app. |
+| <sub>download_type    | <sub>"source"       | <sub>This defines the type of content being downloaded. It can be "source" or "binary". |
+| <sub>download_source_url    | <sub>Sample Data       | <sub>This is the URL to download the application and is typically a link to the GitHub source tar.gz file for a tag or release. It will be extracted and installed prior to running the apps install script. |
+| <sub>download_binary_url    | <sub>Sample Data       | <sub>This is a dictionary of architectures to URL to download the application and is typically a link to the GitHub binary tar.gz file for a tag or release. It will be extracted and installed prior to running the apps install script. |
 | <sub>install_env_vars      | <sub>Dictionary        | <sub>If any additional data is needed during the install process. This dictionary of key/value pairs will be available as env variables. |
 | <sub>supports_testnet      | <sub>false             | <sub>Indicates if the app supports Bitcoint testnet. If not, the app will be disabled when in testnet mode. |
 | <sub>http_port             | <sub>8000              | <sub>Indicates the HTTP port to be used by the application. This should be set for all web apps. The port will be automatically opened. |
@@ -102,7 +106,11 @@ All application data is managed via a JSON file stored in the main application f
         "Fill in longer description"
         ],
     "latest_version": "v0.0.1",
-    "targz_download_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
+    "supported_archs": null,
+    "download_skip": false,
+    "download_type": "source",
+    "download_source_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
+    "download_binary_url": "https://github.com/FILL_IN_GITHUB_USER/FILL_IN_GITHUB_PROJECT/archive/refs/tags/{VERSION}.tar.gz",
     "install_env_vars": {},
     "supports_app_page": true,
     "supports_testnet": false,
