@@ -1,8 +1,8 @@
 # SDK App Template
-This repo holds the template for new myNode applications.
+This repo holds the template for new MyNode applications.
 
 ## SDK Repo
-This template can be used for reference, but for new applications, the myNode SDK repo should be used which will automatically download the latest template and provide tools for packaging myNode apps.
+This template can be used for reference, but for new applications, the MyNode SDK repo should be used which will automatically download the latest template and provide tools for packaging MyNode apps.
 
 https://github.com/mynodebtc/mynode_sdk
 
@@ -20,7 +20,7 @@ This is the core file that controls your application information. It will requir
 This is the systemd service file that will launch your application. It can be customised as necessary. Updating the "ExecStart" line is required.
 
 ### screenshots/*.png
-All PNG files within the screenshots folder will be copied to the proper myNode folders to be displayed on the Marketplace page for the app.
+All PNG files within the screenshots folder will be copied to the proper MyNode folders to be displayed on the Marketplace page for the app.
 
 ### scripts/install_sampleapp.sh
 This script is required. The script will be executed from within the application install directory. The install tarball will have already been extracted and files will be present in the current folder. Any steps to install the application must be performed in this script.
@@ -45,7 +45,7 @@ This file is optional and will be present if your app has a web interface and ca
 
 ## Application Data
 
-All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within myNode. Below is a table of the available settings and a description.
+All application data is managed via a JSON file stored in the main application folder. A variety of settings allow control of the application, its dependencies, and how it appears within MyNode. Below is a table of the available settings and a description.
 
 | Setting                    | Type / Default         | Description                                                               |
 | -------------------------- | ---------------------- | ------------------------------------------------------------------------- |
