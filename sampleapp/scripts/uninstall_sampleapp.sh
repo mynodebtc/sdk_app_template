@@ -2,6 +2,7 @@
 
 source /usr/share/mynode/mynode_device_info.sh
 source /usr/share/mynode/mynode_app_versions.sh
+source /usr/share/mynode/mynode_functions.sh
 
 echo "==================== UNINSTALLING APP ===================="
 
